@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce Craft | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <img src="assets/logo.png" alt="Veloce Craft Logo" class="h-16 w-auto">
+                </div>
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#home" class="text-slate-600 hover:text-blue-600 font-semibold transition px-3">الرئيسية</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-semibold transition px-3">مشاريعنا</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pt-20 pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+                مرحباً بكم في <span class="gradient-text">Veloce Craft</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                نحن نصنع حلولاً برمجية مبتكرة تتناسب مع احتياجات عملك. من أنظمة التسيير المعقدة إلى المتاجر الإلكترونية الاحترافية، نحول أفكارك إلى واقع رقمي ملموس.
+            </p>
+            <a href="#projects" class="inline-block bg-slate-900 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-blue-600 transition shadow-lg">
+                استكشف أعمالنا
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">أحدث مشاريعنا</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="mt-4 text-slate-500 text-lg">تصفح مجموعة من أحدث البرامج والمواقع التي قمنا بتطويرها</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Project 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg border border-slate-100 project-card group">
+                    <div class="overflow-hidden h-64 relative">
+                        <img src="assets/school1.jpg" alt="برنامج تسيير المدارس" class="w-full h-full object-cover transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">برامج التسيير</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">لوجيسيال تسيير المدارس</h3>
+                        <p class="text-slate-600 mb-4">
+                            نظام متكامل لإدارة المدارس الخاصة، يتيح تتبع اشتراكات التلاميذ، مداخيل المدرسة، جداول التوقيت، وإدارة الأساتذة والأقسام بلوحة تحكم عصرية وسهلة الاستخدام.
+                        </p>
+                        <div class="grid grid-cols-2 gap-2 mt-4">
+                            <img src="assets/school2.jpg" alt="واجهة جداول التوقيت" class="rounded-lg shadow-sm border border-slate-200">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg border border-slate-100 project-card group">
+                    <div class="overflow-hidden h-64 relative">
+                        <img src="assets/inventory.png" alt="برنامج تسيير المخزون" class="w-full h-full object-cover transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-green-600 bg-green-100 px-3 py-1 rounded-full">أنظمة المؤسسات</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">لوجيسيال تسيير المخزون</h3>
+                        <p class="text-slate-600 mb-4">
+                            برنامج احترافي لإدارة المخزون ونقاط البيع، مع لوحة قياس (Dashboard) توضح المبيعات اليومية والشهرية، تتبع المنتجات، وإصدار الفواتير بطريقة دقيقة وسريعة.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg border border-slate-100 project-card group">
+                    <div class="overflow-hidden h-64 relative">
+                        <img src="assets/extrajoy.png" alt="متجر إكسترا جوي" class="w-full h-full object-cover object-top transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded-full">التجارة الإلكترونية</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">متجر Extra Joy</h3>
+                        <p class="text-slate-600 mb-4">
+                            موقع تجارة إلكترونية (E-commerce) متكامل ومُحسّن لمحركات البحث لمتجر "إكسترا جوي" المتخصص في مستلزمات الأم والطفل، يتميز بتصميم جذاب وتجربة مستخدم سلسة.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action & Contact -->
+    <section id="contact" class="bg-slate-900 py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">هل أنت مستعد لإطلاق مشروعك القادم؟</h2>
+            <p class="text-slate-300 text-lg mb-10">
+                في Veloce Craft، نضع خبراتنا بين يديك لبناء تطبيقات وأنظمة تعزز من نمو أعمالك. تواصل معنا اليوم لتحويل فكرتك إلى مشروع ناجح.
+            </p>
+            <a href="mailto:contact@velocecraft.com" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-blue-500 transition shadow-[0_0_15px_rgba(37,99,235,0.5)]">
+                ابدأ مشروعك معنا الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <img src="assets/logo.png" alt="Veloce Craft Logo" class="h-10 w-auto mx-auto mb-4 opacity-80 grayscale hover:grayscale-0 transition">
+            <p class="text-slate-500">© 2026 Veloce Craft. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
