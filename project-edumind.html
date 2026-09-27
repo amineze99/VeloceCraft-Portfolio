@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUMIND | Veloce Craft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cairo', 'sans-serif'] },
+                    colors: { primary: '#1e3a8a', dark: '#1f2937', light: '#f3f4f6' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-slate-800 font-sans">
+    
+    <!-- Simple Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-slate-600 hover:text-primary transition font-bold">
+                <span>&rarr; عودة للرئيسية</span>
+            </a>
+            <img src="assets/logo.png" alt="Veloce Craft" class="h-8">
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+            <div class="flex items-center gap-6 mb-8 border-b pb-8">
+                <img src="assets/edumind-logo.png" alt="Edumind" class="h-20 bg-slate-800 p-2 rounded-xl">
+                <div>
+                    <h1 class="text-4xl font-bold text-dark mb-2">EDUMIND</h1>
+                    <p class="text-slate-500 text-lg">نظام الإدارة المدرسية الشامل</p>
+                </div>
+            </div>
+
+            <div class="prose max-w-none text-lg text-slate-700 leading-relaxed mb-12">
+                <p class="mb-4">
+                    <strong>EDUMIND</strong> هو برنامج متطور تم تصميمه خصيصاً لتسهيل تسيير المؤسسات التعليمية والمدارس الخاصة. يجمع النظام بين البساطة في الاستخدام والقوة في الأداء لضمان تنظيم كامل لكل جوانب المدرسة.
+                </p>
+                <h3 class="text-2xl font-bold mt-8 mb-4">أهم الميزات:</h3>
+                <ul class="list-disc list-inside space-y-2 mb-8">
+                    <li>لوحة تحكم (Dashboard) توضح المداخيل، المدفوعات، وإحصائيات الطلاب لحظة بلحظة.</li>
+                    <li>إدارة ملفات التلاميذ والأساتذة والأقسام بكفاءة.</li>
+                    <li>إنشاء وتسيير جداول التوقيت والأفواج الأسبوعية بطريقة مرئية سهلة.</li>
+                    <li>متابعة الاشتراكات وتنبيهات التأخر في الدفع.</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8">
+                <img src="assets/school1.jpg" alt="Dashboard" class="rounded-xl shadow-lg border w-full">
+                <img src="assets/school2.jpg" alt="Timetable" class="rounded-xl shadow-lg border w-full">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark py-8 text-center text-white">
+        <p class="text-slate-400 text-sm">© 2026 Veloce Craft. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
