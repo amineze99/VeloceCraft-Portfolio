@@ -47,8 +47,9 @@
     <header class="bg-white/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center">
-                    <img src="assets/logo.png" alt="Veloce Craft" class="h-12 w-auto">
+                <div class="flex items-center py-2">
+                    <!-- LOGO SIZE INCREASED -->
+                    <img src="assets/logo.png" alt="Veloce Craft" class="h-16 w-auto transform hover:scale-105 transition duration-300">
                 </div>
                 <nav class="hidden md:flex space-x-8 space-x-reverse">
                     <a href="#home" class="text-slate-600 hover:text-primary font-semibold transition">الرئيسية</a>
@@ -91,25 +92,26 @@
             <h2 class="text-3xl font-bold text-dark mb-12">خدماتنا</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-md transition">
+                <!-- ALL NODES HAVE SAME DESIGN NOW -->
+                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="bg-white w-full h-40 rounded-lg mb-6 flex items-center justify-center overflow-hidden border border-slate-200">
-                        <img src="assets/extrajoy.png" class="w-full h-full object-cover opacity-50" alt="E-commerce">
+                        <img src="assets/extrajoy.png" class="w-full h-full object-cover opacity-60 hover:opacity-100 transition duration-300" alt="E-commerce">
                     </div>
                     <h3 class="text-xl font-bold mb-2">حلول التجارة الإلكترونية</h3>
                     <p class="text-slate-500 text-sm">متاجر إلكترونية متكاملة ومحسنة لتجربة المستخدم.</p>
                 </div>
                 <!-- Service 2 -->
-                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-md transition relative -translate-y-4 border-b-4 border-dark">
+                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
                     <div class="bg-white w-full h-40 rounded-lg mb-6 flex items-center justify-center overflow-hidden border border-slate-200">
-                        <img src="assets/inventory.png" class="w-full h-full object-cover opacity-50" alt="Management">
+                        <img src="assets/inventory.png" class="w-full h-full object-cover opacity-60 hover:opacity-100 transition duration-300" alt="Management">
                     </div>
                     <h3 class="text-xl font-bold mb-2">أنظمة التسيير و ERP</h3>
                     <p class="text-slate-500 text-sm">برامج مخصصة لتسيير المخزون، المدارس، والمؤسسات.</p>
                 </div>
                 <!-- Service 3 -->
-                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-md transition">
-                    <div class="bg-white w-full h-40 rounded-lg mb-6 flex items-center justify-center overflow-hidden border border-slate-200">
-                        <div class="text-slate-300 text-6xl">⚙️</div>
+                <div class="bg-light p-8 rounded-xl text-center shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white w-full h-40 rounded-lg mb-6 flex items-center justify-center overflow-hidden border border-slate-200 hover:bg-slate-50 transition duration-300">
+                        <div class="text-slate-300 text-6xl drop-shadow-sm hover:scale-110 hover:text-slate-400 transition-all duration-300">⚙️</div>
                     </div>
                     <h3 class="text-xl font-bold mb-2">تحسين الأداء والصيانة</h3>
                     <p class="text-slate-500 text-sm">دعم فني مستمر وتطوير الأداء لضمان الاستمرارية.</p>
@@ -226,7 +228,8 @@
                 <!-- Member 1 -->
                 <div class="w-72">
                     <div class="bg-light h-64 rounded-xl mb-4 overflow-hidden border border-slate-200">
-                        <img src="assets/amine.jpg">
+                        <!-- PROFILE PHOTO COVER FIX -->
+                        <img src="assets/amine.jpg" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
                     </div>
                     <h3 class="font-bold text-xl">ZEGHMOUM TAHA AMINE</h3>
                     <p class="text-primary text-sm font-semibold mb-3">Co-Founder & Developer</p>
@@ -238,7 +241,8 @@
                 <!-- Member 2 -->
                 <div class="w-72">
                     <div class="bg-light h-64 rounded-xl mb-4 overflow-hidden border border-slate-200">
-                        <img src="assets/belm.jpg">
+                        <!-- PROFILE PHOTO COVER FIX -->
+                        <img src="assets/belm.jpg" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
                     </div>
                     <h3 class="font-bold text-xl">BELMAHDI MOHAMED</h3>
                     <p class="text-primary text-sm font-semibold mb-3">Co-Founder & Developer</p>
